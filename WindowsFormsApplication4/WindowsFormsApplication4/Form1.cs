@@ -114,21 +114,7 @@ namespace WindowsFormsApplication4
                 {
                     zaehler++;
 
-                    /*if (zaehler == 1)
-                    {
-                        lblZahlen_bisher.Text += eingabe;
-                        lblZahlen_bisher.Visible = true;
-                    }
-                    else
-                    {
-                        lblZahlen_bisher.Text += ", " + eingabe;
-                        lblZahlen_bisher.Visible = true;
-                    }*/
-
                     lblFalsch.Visible = false;
-                    //lblEingabe.Text = "Ihre Eingabe: ";
-                    //lblEingabe.Text += eingabe;
-                    //lblEingabe.Visible = true;
                         
                     if (eingabe > Zufallszahl)
                     {
@@ -136,10 +122,7 @@ namespace WindowsFormsApplication4
                         lblRate_kleiner.Text = " ist groesser als die gesuchte Zahl.";
                         lblRate_kleiner.Text = eingabe + lblRate_kleiner.Text;
                         lblRate_kleiner.Visible = true;
-                        //ListViewItem item1 = new ListViewItem(""+Convert.ToString(zaehler));                        
-                        //item1.SubItems.Add("");
-                        //item1.SubItems.Add(eingabe);
-                        //Werte_bisher.Items.Add(item1);
+
                         add_item(Convert.ToString(zaehler),"",Convert.ToString(eingabe));
                         txtEingabe.Clear();
                     }
